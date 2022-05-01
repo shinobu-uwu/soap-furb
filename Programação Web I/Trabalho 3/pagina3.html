@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 3</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Coluna 1</th>
+        <th>Coluna 2</th>
+        <th>Coluna 3</th>
+    </tr>
+    </thead>
+    <tbody id="corpo-tabela">
+    <tr>
+        <th>Registro 1, 1</th>
+        <th>Registro 1, 2</th>
+        <th>Registro 1, 3</th>
+    </tr>
+    <tr>
+        <th>Registro 2, 1</th>
+        <th>Registro 2, 2</th>
+        <th>Registro 2, 3</th>
+    </tr>
+    <tr>
+        <th>Registro 3, 1</th>
+        <th>Registro 3, 2</th>
+        <th>Registro 3, 3</th>
+    </tr>
+    </tbody>
+</table>
+<button onclick="criarLinha()">Criar linha</button>
+<button onclick="listarElementos()">Listar elementos</button>
+<br>
+<p id="resultado-listar"></p>
+</body>
+<script>
+    function criarLinha() {
+        let tabela = document.getElementById('corpo-tabela');
+        tabela.innerHTML += `
+        <tr>
+            <th>Novo registro</th>
+            <th>Novo registro</th>
+            <th>Novo registro</th>
+        </tr>`;
+    }
+
+    function listarElementos() {
+        let elementos = document.getElementsByTagName('*');
+        let resultado = document.getElementById('resultado-listar')
+        let tags = {};
+
+        for (elemento of elementos) {
+            if (tags[elemento.tagName] !== undefined) {
+                tags[elemento.tagName]++;
+
+                continue;
+            }
+
+            tags[elemento.tagName] = 1;
+        }
+
+        for (const tagName in tags) {
+            resultado.innerText += `${tagName} ocorre ${tags[tagName]} vezes\n`;
+        }
+    }
+</script>
+<style>
+    table {
+        border: 2px solid black;
+    }
+
+    th {
+        border: 2px solid black;
+    }
+</style>
+</html>

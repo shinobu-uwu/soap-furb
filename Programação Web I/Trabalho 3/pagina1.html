@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 1</title>
+</head>
+<body>
+<input type="number" id="numero-1">
++
+<input type="number" id="numero-2">
+<br>
+<button onclick="somar()">Somar</button>
+<p id="resultado-soma">Resultado: </p>
+<button onclick="verificar()">Verificar números</button>
+<p id="resultado-verificar"></p>
+<script>
+    function getNumeros() {
+        let n1 = parseInt(document.getElementById('numero-1').value);
+        let n2 = parseInt(document.getElementById('numero-2').value);
+
+        return [n1, n2]
+    }
+    function somar() {
+        // O valor que vem do DOM é uma string, então precisamos converter para inteiro
+        let numeros = getNumeros();
+        let resultado = document.getElementById('resultado-soma');
+        resultado.innerText += numeros[0] + numeros[1];
+    }
+
+    function verificar() {
+        let numeros = getNumeros();
+        let resultado = document.getElementById('resultado-verificar');
+
+        if (numeros[0] > numeros[1]) {
+            resultado.innerText = 'Primeiro número é maior';
+            resultado.style.backgroundColor = 'red';
+        } else if (numeros[0] < numeros[1]) {
+            resultado.innerText = 'Segundo número é maior';
+            resultado.style.backgroundColor = 'green';
+        } else {
+            resultado.innerText = 'Ambos são iguais';
+            resultado.style.backgroundColor = 'yellow';
+        }
+    }
+</script>
+</body>
+</html>

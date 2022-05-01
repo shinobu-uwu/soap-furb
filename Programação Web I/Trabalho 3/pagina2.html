@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página 2</title>
+</head>
+<body>
+<input type="text" oninput="espelhar(this)" id="input">
+<button onclick="calcularTamanho()">Calcular tamanho</button>
+<br>
+<p id="teclas"></p>
+<p id="tamanho">O tamanho do campo é: </p>
+<div id="hora"></div>
+
+<script>
+    let hora = document.getElementById('hora');
+    hora.style.backgroundColor = 'blue';
+
+    setInterval(() => {
+        let date = new Date();
+        hora.innerText = date.toTimeString().split(' ')[0];
+
+        if (date.getSeconds() === 0) {
+            if (hora.style.backgroundColor === 'blue') {
+                hora.style.backgroundColor = 'green';
+            } else if (hora.style.backgroundColor === 'green') {
+                hora.style.backgroundColor = 'yellow';
+            } else if (hora.style.backgroundColor === 'yellow') {
+                hora.style.backgroundColor = 'red';
+            } else {
+                hora.style.backgroundColor = 'blue';
+            }
+        }
+    }, 1000);
+
+    function espelhar(input) {
+        let teclas = document.getElementById('teclas');
+        teclas.innerText = input.value;
+    }
+
+    function calcularTamanho() {
+        let input = document.getElementById('input');
+        let tamanho = input.value.length;
+        document.getElementById('tamanho').innerText = `O tamanho do campo é: ${tamanho}`;
+    }
+</script>
+</body>
+</html>
