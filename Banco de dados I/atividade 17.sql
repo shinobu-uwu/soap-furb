@@ -4,6 +4,8 @@ CREATE TABLE IF NOT EXISTS Marca
     ds_marca VARCHAR(30) NOT NULL
 );
 
+ALTER TABLE Marca ADD PRIMARY KEY (cd_marca);
+
 CREATE TABLE IF NOT EXISTS Modelo
 (
     cd_modelo INTEGER PRIMARY KEY,
@@ -11,6 +13,8 @@ CREATE TABLE IF NOT EXISTS Modelo
     FOREIGN KEY (cd_marca) REFERENCES Marca (cd_marca),
     ds_modelo VARCHAR(50) NOT NULL
 );
+
+ALTER TABLE Modelo ADD PRIMARY KEY (cd_modelo);
 
 CREATE TABLE IF NOT EXISTS Localidade
 (
