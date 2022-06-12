@@ -1,0 +1,30 @@
+.btn-nav:hover {
+    border-bottom: 5px solid black;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 12px 16px;
+    list-style-type: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation-name: opacity-animation;
+    animation-duration: 0.25s;
+}
+
+.valores {
+    list-style-type: none;
+}
+
+@keyframes opacity-animation {
+    from {opacity: 0}
+    to {opacity: 100%}
+}

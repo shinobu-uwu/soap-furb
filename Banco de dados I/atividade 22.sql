@@ -64,4 +64,4 @@ FROM Veiculo V
          JOIN Marca MA ON MA.cd_marca = MO.cd_marca
          JOIN Veiculo_Combustivel VC ON V.nr_placa = VC.nr_placa
          JOIN Combustivel C ON C.cd_combustivel = VC.cd_combustivel
-GROUP BY V.nr_placa;
+GROUP BY V.nr_placa, MA.ds_marca, MO.ds_modelo;
