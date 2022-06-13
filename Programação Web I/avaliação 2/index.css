@@ -1,6 +1,7 @@
 .btn-nav:hover {
     border-bottom: 5px solid black;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -25,6 +26,34 @@
 }
 
 @keyframes opacity-animation {
-    from {opacity: 0}
-    to {opacity: 100%}
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 100%
+    }
+}
+
+.table-bordered tr:first-child {
+    border-top-width: 0;
+}
+
+.table-bordered tr:last-child {
+    border-bottom-width: 0;
+}
+
+.table-bordered th:first-child {
+    border-left-width: 0;
+}
+
+.table-bordered th:last-child {
+    border-right-width: 0;
+}
+
+.table-bordered td:first-child {
+    border-left-width: 0;
+}
+
+.table-bordered td:last-child {
+    border-right-width: 0;
 }

@@ -7,7 +7,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet">
     <script src="index.js" defer></script>
-    <script src="cadastroProduto.js" defer></script>
+    <script src="relatorio.js" defer></script>
     <title>Cadastrar produto</title>
 </head>
 <header>
@@ -22,37 +22,14 @@
 </header>
 <body>
 <div class="px-4 pt-5 my-5 text-center container">
-    <h1>Cadastar produto</h1>
-    <form>
-        <div class="row mb-3">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Código de barras" id="codigo-barras">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nome do produto" id="nome">
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Marca" id="marca">
-            </div>
-            <div class="col">
-                <input type="number" class="form-control" placeholder="Quantidade em estoque" min="0" id="quantidade">
-            </div>
-        </div>
-        <button class="btn btn-primary" type="button" onclick="cadastrarProduto()">Cadastrar produto</button>
-        <a class="btn btn-dark" href="relatorio.html">Relatório</a>
-    </form>
     <table class="table table-bordered">
         <thead>
-            <tr>
-                <th>Código de barras</th>
-                <th>Nome do produto</th>
-                <th>Nome da marca</th>
-                <th>Quantidade em estoque</th>
-                <th>Editar</th>
-                <th>Excluir</th>
-            </tr>
+        <tr>
+            <th>Código de barras</th>
+            <th>Nome do produto</th>
+            <th>Nome da marca</th>
+            <th>Quantidade em estoque</th>
+        </tr>
         </thead>
         <tbody id="produtos"></tbody>
     </table>
