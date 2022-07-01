@@ -1,6 +1,8 @@
 import {Container, Nav} from "react-bootstrap";
+import {useState} from "react";
 
 export default function Footer() {
+
     return (
         <Container>
             <footer className="py-3 my-4">

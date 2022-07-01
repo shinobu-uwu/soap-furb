@@ -1,9 +1,11 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import avatar from '../avatar.webp';
+import Cookies from 'js-cookie';
 
 export default function Header() {
-    const [user, setUser] = useState();
+    const [usuario, setUsuario] = useState();
+    useEffect(() => setUsuario(Cookies.get('username')), []);
 
     return (
         <header>
@@ -12,24 +14,24 @@ export default function Header() {
                     <Navbar.Brand className="text-white" href="/"><b>Piróquitos</b></Navbar.Brand>
                 </Container>
                 <Container className="text-white justify-content-end" id="user-login">
-                    {getUser(user)}
+                    {getUserComponent(usuario)}
                 </Container>
             </Navbar>
         </header>
     );
 }
 
-function getUser(user) {
-    if (user) {
-        return (
-            <>
-                <p className="m-lg-0">{user}</p>
-                <a href="/cadastro">
-                    <img width="50" height="50" src={avatar} alt="Avatar do usuário"
-                         className="img-fluid img-thumbnail"/>
-                </a>
-            </>
-        );
+function getUserComponent(user) {
+    if (!user) {
+        return <Nav.Item>Usuário não autenticado</Nav.Item>
     }
-    return <Nav.Item className="m-lg-0">Usuário não autenticado</Nav.Item>;
+
+    return (
+        <>
+            <p className="m-lg-0" style={{paddingRight: 12 + 'px'}}>{user}</p>
+            <a href="/Login">
+                <img width="50" height="50" src={avatar} alt="Avatar do usuário" className="img-fluid img-thumbnail"/>
+            </a>
+        </>
+    );
 }

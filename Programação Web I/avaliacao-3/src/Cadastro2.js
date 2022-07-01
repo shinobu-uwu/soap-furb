@@ -4,6 +4,7 @@ import {Cadastro} from './Modelos/Cadastro';
 
 export default function Cadastro2() {
     const [cadastro, setCadastro] = useState(new Cadastro());
+
     const lidaRequisicao = () => {
         fetch('https://bu.furb.br/mcardoso/progWeb/apiRestAval.php/cadastro/')
             .then(r => {
