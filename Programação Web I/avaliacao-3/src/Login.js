@@ -4,10 +4,8 @@ import Cookies from "js-cookie";
 export default function Login() {
     return (
         <>
-            <div id="alerta">
-
-            </div>
-            <Form>
+            <div id="alerta"></div>
+            <Form className="w-50 mx-auto">
                 <Container>
                     <FormGroup className="mb-3">
                         <Form.Label>Login</Form.Label>
