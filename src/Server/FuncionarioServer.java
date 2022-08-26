@@ -16,11 +16,11 @@ public interface FuncionarioServer {
     void criar(String nomeFuncionario, Empresa empresa) throws ParametroInvalidoException;
 
     @WebMethod
-    Empresa ler(String nomeFuncionario) throws Exception;
+    Funcionario ler(String nomeFuncionario, Empresa empresa) throws Exception;
 
     @WebMethod
     void atualizar(Funcionario funcionario, String nome) throws ParametroInvalidoException;
 
     @WebMethod
-    void deletar(Funcionario funcionario);
+    void deletar(Empresa empresa, Funcionario funcionario);
 }
