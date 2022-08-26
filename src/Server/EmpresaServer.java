@@ -18,8 +18,8 @@ public interface EmpresaServer {
     Empresa ler(String nomeEmpresa) throws Exception;
 
     @WebMethod
-    void atualizar(Empresa empresa);
+    void atualizar(Empresa empresa, String nome) throws ParametroInvalidoException;
 
     @WebMethod
-    void deletar(String nome);
+    void deletar(Empresa empresa);
 }

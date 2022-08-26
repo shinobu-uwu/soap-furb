@@ -23,12 +23,12 @@ public class EmpresaServerImpl implements EmpresaServer {
     }
 
     @Override
-    public void atualizar(Empresa empresa) {
-
+    public void atualizar(Empresa empresa, String nome) throws ParametroInvalidoException {
+        empresaControle.Editar(empresa, nome);
     }
 
     @Override
-    public void deletar(String nome) {
-
+    public void deletar(Empresa empresa) {
+        empresaControle.Delete(empresa);
     }
 }

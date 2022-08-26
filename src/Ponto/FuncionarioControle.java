@@ -31,6 +31,7 @@ public class FuncionarioControle {
             }
 
         }
+
         throw new Exception();
     }
 }
