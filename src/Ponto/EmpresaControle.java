@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import Exceptions.ParametroInvalidoException;
 
 public class EmpresaControle {
-    private ArrayList<Empresa> empresas = new ArrayList<Empresa>();
+    private static ArrayList<Empresa> empresas = new ArrayList<Empresa>();
 
     public void CriarEmpresa(String nomeEmpresa) throws ParametroInvalidoException {
         if (nomeEmpresa.isEmpty()) {

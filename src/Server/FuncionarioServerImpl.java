@@ -30,4 +30,9 @@ public class FuncionarioServerImpl implements FuncionarioServer {
     public void deletar(Empresa empresa, Funcionario funcionario) {
         funcionarioControle.Delete(empresa, funcionario);
     }
+
+    @Override
+    public Empresa[] listarEmpresas(Funcionario funcionario) {
+        return funcionarioControle.listarEmpresas(funcionario);
+    }
 }

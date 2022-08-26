@@ -23,4 +23,7 @@ public interface FuncionarioServer {
 
     @WebMethod
     void deletar(Empresa empresa, Funcionario funcionario);
+
+    @WebMethod
+    Empresa[] listarEmpresas(Funcionario funcionario);
 }
