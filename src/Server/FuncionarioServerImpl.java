@@ -5,10 +5,13 @@ import Ponto.Empresa;
 import Ponto.Funcionario;
 import Ponto.FuncionarioControle;
 
+import javax.jws.WebService;
+
+@WebService(name = "funcionario", endpointInterface = "Server.FuncionarioServer")
 public class FuncionarioServerImpl implements FuncionarioServer {
 
     @Override
-    public void criar(String nomeFuncionario) throws ParametroInvalidoException {
+    public void criar(String nomeFuncionario, Empresa empresa) throws ParametroInvalidoException {
 
     }
 

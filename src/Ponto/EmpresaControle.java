@@ -39,4 +39,8 @@ public class EmpresaControle {
         }
         throw new Exception();
     }
+
+    public Empresa[] lerTodas() {
+        return empresas.toArray(new Empresa[0]);
+    }
 }
