@@ -1,0 +1,12 @@
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/bin/Debug/net6.0/Compilador.deps.json
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/bin/Debug/net6.0/Compilador.dll
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/bin/Debug/net6.0/ref/Compilador.dll
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/bin/Debug/net6.0/Compilador.pdb
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/obj/Debug/net6.0/Compilador.csproj.AssemblyReference.cache
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/obj/Debug/net6.0/Compilador.GeneratedMSBuildEditorConfig.editorconfig
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/obj/Debug/net6.0/Compilador.AssemblyInfoInputs.cache
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/obj/Debug/net6.0/Compilador.AssemblyInfo.cs
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/obj/Debug/net6.0/Compilador.csproj.CoreCompileInputs.cache
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/obj/Debug/net6.0/Compilador.dll
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/obj/Debug/net6.0/ref/Compilador.dll
+/home/shinobu/Projects/FURB/Compiladores/Compilador/Compilador/obj/Debug/net6.0/Compilador.pdb

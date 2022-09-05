@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compilador", "Compilador\Compilador.csproj", "{4A495CF0-276B-40E1-8E01-74FA057F51F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compilador.UI", "Compilador.UI\Compilador.UI.csproj", "{CAD26A29-F45D-44DC-9CCB-1D71CA62E3C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compilador.CLI", "Compilador.CLI\Compilador.CLI.csproj", "{DF5539CE-3CB4-470C-A0D2-2EF375E69492}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A495CF0-276B-40E1-8E01-74FA057F51F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A495CF0-276B-40E1-8E01-74FA057F51F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A495CF0-276B-40E1-8E01-74FA057F51F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A495CF0-276B-40E1-8E01-74FA057F51F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD26A29-F45D-44DC-9CCB-1D71CA62E3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD26A29-F45D-44DC-9CCB-1D71CA62E3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD26A29-F45D-44DC-9CCB-1D71CA62E3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD26A29-F45D-44DC-9CCB-1D71CA62E3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5539CE-3CB4-470C-A0D2-2EF375E69492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5539CE-3CB4-470C-A0D2-2EF375E69492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5539CE-3CB4-470C-A0D2-2EF375E69492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5539CE-3CB4-470C-A0D2-2EF375E69492}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

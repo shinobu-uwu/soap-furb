@@ -1,0 +1,15 @@
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.exe
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.deps.json
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.runtimeconfig.json
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.dll
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\bin\Debug\net6.0-windows\Compilador.pdb
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.csproj.AssemblyReference.cache
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.AssemblyInfoInputs.cache
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.AssemblyInfo.cs
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.dll
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\refint\Compilador.dll
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.pdb
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\Compilador.genruntimeconfig.cache
+C:\Users\Matheus\RiderProjects\Compilador\Compilador\obj\Debug\net6.0-windows\ref\Compilador.dll
